@@ -1,7 +1,8 @@
 package com.lzb.jiankong.activity;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+
+import android.app.ActivityManager;
+import android.content.Context;
 
 import com.lzb.jiankong.R;
 
@@ -15,6 +16,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     void init() {
-
+        ActivityManager activityManager= (ActivityManager) this.getSystemService(Context.ACTIVITY_SERVICE);
+        activityManager.getRunningAppProcesses();
     }
 }

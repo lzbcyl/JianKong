@@ -1,8 +1,10 @@
 package com.lzb.jiankong.viewmodel;
 
 import android.app.Application;
-import android.arch.lifecycle.AndroidViewModel;
-import android.support.annotation.NonNull;
+
+
+import androidx.annotation.NonNull;
+import androidx.lifecycle.AndroidViewModel;
 
 import java.util.concurrent.TimeUnit;
 
@@ -15,9 +17,11 @@ import io.reactivex.schedulers.Schedulers;
 
 public class BaseViewModel extends AndroidViewModel {
     private CompositeDisposable mCompositeDisposable;
+
     public BaseViewModel(@NonNull Application application) {
         super(application);
     }
+
     protected <T> void execute(Observable<T> observable, Observer<T> observer) {
         observable
                 .throttleFirst(500, TimeUnit.MILLISECONDS)

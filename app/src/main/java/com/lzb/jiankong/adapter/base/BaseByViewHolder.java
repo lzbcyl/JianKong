@@ -1,4 +1,4 @@
-package com.lzb.jiankong.adapter;
+package com.lzb.jiankong.adapter.base;
 
 
 import android.graphics.Bitmap;
@@ -26,10 +26,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.StringRes;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.lzb.jiankong.view.recycleview.ByRecyclerView;
+
 
 /**
- * @author jingbin
- * link to https://github.com/youlookwhat/ByRecyclerView
+ * @author lzb
+ * link to https://github.com/lzbcyl/JianKong
  */
 public abstract class BaseByViewHolder<T> extends RecyclerView.ViewHolder {
 
@@ -51,7 +53,7 @@ public abstract class BaseByViewHolder<T> extends RecyclerView.ViewHolder {
      * @param bean     the data of bind
      * @param position the item position of recyclerView
      */
-    protected abstract void onBaseBindView(BaseByViewHolder<T> holder, T bean, int position);
+    public abstract void onBaseBindView(BaseByViewHolder<T> holder, T bean, int position);
 
     @SuppressWarnings("unchecked")
     public <V extends View> V getView(@IdRes int viewId) {
