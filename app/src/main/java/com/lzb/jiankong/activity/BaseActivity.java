@@ -9,7 +9,7 @@ import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 
 public abstract class BaseActivity<T extends ViewDataBinding> extends AppCompatActivity {
-    private T mBinding;
+    public T mBinding;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
