@@ -6,6 +6,7 @@ import android.content.Context;
 import android.os.Build;
 
 import androidx.annotation.RequiresApi;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.lzb.jiankong.R;
 import com.lzb.jiankong.adapter.RunAppAdapter;
@@ -32,6 +33,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
 
         ActivityManager activityManager = (ActivityManager) this.getSystemService(Context.ACTIVITY_SERVICE);
         List<ActivityManager.RunningAppProcessInfo> list = activityManager.getRunningAppProcesses();
+
         list.forEach(r -> {
             RunAppBean runAppBean = new RunAppBean();
             runAppBean.setName(r.processName);
@@ -39,5 +41,9 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
         });
 
 
+        mBinding.rv.setLayoutManager(new LinearLayoutManager(this));
+        mBinding.rv.setAdapter(runAppAdapter);
+        runAppAdapter.addAll(this.list);
+        runAppAdapter.notifyDataSetChanged();
     }
 }

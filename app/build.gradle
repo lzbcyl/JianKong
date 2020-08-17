@@ -44,6 +44,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     compileOnly "org.projectlombok:lombok:1.16.18"
+    annotationProcessor  "org.projectlombok:lombok:1.16.18"
     implementation 'org.glassfish:javax.annotation:10.0-b28'
 
     /**
