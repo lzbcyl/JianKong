@@ -2,6 +2,7 @@ package com.lzb.jiankong.activity;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Window;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;

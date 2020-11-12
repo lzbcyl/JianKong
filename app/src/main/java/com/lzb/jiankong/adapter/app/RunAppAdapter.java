@@ -1,4 +1,4 @@
-package com.lzb.jiankong.adapter;
+package com.lzb.jiankong.adapter.app;
 
 import com.lzb.jiankong.adapter.base.BaseBindingAdapter;
 import com.lzb.jiankong.adapter.base.BaseBindingHolder;
