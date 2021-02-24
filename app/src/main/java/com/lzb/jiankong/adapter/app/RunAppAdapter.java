@@ -1,9 +1,9 @@
 package com.lzb.jiankong.adapter.app;
 
-import com.lzb.jiankong.adapter.base.BaseBindingAdapter;
-import com.lzb.jiankong.adapter.base.BaseBindingHolder;
 import com.lzb.jiankong.bean.RunAppBean;
 import com.lzb.jiankong.databinding.ItemMainBinding;
+import com.lzb.lzbutils.adapter.base.BaseBindingAdapter;
+import com.lzb.lzbutils.adapter.base.BaseBindingHolder;
 
 public class RunAppAdapter extends BaseBindingAdapter<RunAppBean, ItemMainBinding> {
     public RunAppAdapter(int layoutId) {

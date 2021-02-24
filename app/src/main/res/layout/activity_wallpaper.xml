@@ -10,10 +10,10 @@
         android:layout_height="match_parent">
 
 
-        <com.lzb.jiankong.view.recycleview.ByRecyclerView
+        <com.lzb.lzbutils.view.recyclew.ByRecyclerView
             android:id="@+id/header_rv_id"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent" />
 
     </FrameLayout>
 

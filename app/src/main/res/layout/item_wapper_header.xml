@@ -5,18 +5,20 @@
 
         <variable
             name="item"
-            type="com.lzb.jiankong.bean.WapperItemBean" />
+            type="com.lzb.jiankong.bean.rep.WallpaperBean" />
 
     </data>
 
-    <FrameLayout
+
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="150dp"
+        android:layout_margin="5dp">
 
-
-        <androidx.cardview.widget.CardView
+        <ImageView
+            imageUrl="@{item.imageUrl}"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_margin="5dp" />
-    </FrameLayout>
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
 </layout>

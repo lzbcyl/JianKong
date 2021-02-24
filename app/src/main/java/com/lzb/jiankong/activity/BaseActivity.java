@@ -2,7 +2,6 @@ package com.lzb.jiankong.activity;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.Window;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,13 +24,13 @@ public abstract class BaseActivity<T extends ViewDataBinding> extends AppCompatA
      *
      * @return
      */
-    abstract int initView();
+    public abstract int initView();
 
     /**
      * 初始化数据
      */
 
-    abstract void init();
+    public abstract void init();
 
 
 }
