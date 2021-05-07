@@ -17,6 +17,7 @@ public abstract class BaseActivity<T extends ViewDataBinding> extends AppCompatA
         mBinding = DataBindingUtil.inflate(LayoutInflater.from(this), initView(), null, false);
         setContentView(mBinding.getRoot());
         init();
+
     }
 
     /**
